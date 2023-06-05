@@ -2,7 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req,res) => {
-  res.send("Hello Alfred Ortega");
+  res.send("Laish Ortega");
+});
+
+app.get('/alfred', (req,res) => {
+    res.send("Alfred Ortega");
 });
 
 app.listen(process.env.port || 3000);
