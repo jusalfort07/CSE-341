@@ -1,0 +1,17 @@
+//LOCAL ENVIRONMENT
+//Get All Contacts
+GET http://localhost:8080/contacts
+
+//Get Individual Contact
+GET http://localhost:8080/contacts/64845d8828b5e4bfd5d242b3
+GET http://localhost:8080/contacts/64845e3728b5e4bfd5d242b5
+GET http://localhost:8080/contacts/648460ea28b5e4bfd5d242b8
+
+//RENDER ENVIRONMENT
+//Get All Contacts
+GET https://cse-341-ortega.onrender.com/contacts
+
+//Get Individual Contact
+GET https://cse-341-ortega.onrender.com/contacts/64845d8828b5e4bfd5d242b3
+GET https://cse-341-ortega.onrender.com/contacts/64845e3728b5e4bfd5d242b5
+GET https://cse-341-ortega.onrender.com/contacts/648460ea28b5e4bfd5d242b8
