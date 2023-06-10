@@ -1,7 +1,20 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
+
+const mongodb = require('./connection')
+
+const port = process.env.PORT;
 
 app.use('/', require('./routes/index'));
+app.use('/contacts', require('./routes/contacts'));
 
-app.listen(process.env.port || 3000);
-console.log('Web Server is listening at port '+ (process.env.port || 3000));
+mongodb.initDb((err, mongodb) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on ${port}`);
+  }
+});
