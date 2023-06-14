@@ -1,16 +1,17 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const dotenv = require('dotenv');
+app.use(express.json());
+const dotenv = require("dotenv");
 dotenv.config();
 
-const mongodb = require('./connection')
+const mongodb = require("./connection");
 
 const port = process.env.PORT;
 
-app.use('/', require('./routes/index'));
-app.use('/contacts', require('./routes/contacts'));
+app.use("/", require("./routes/index"));
+app.use("/contacts", require("./routes/contacts"));
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {
