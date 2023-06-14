@@ -43,7 +43,7 @@ content-type: application/json
 
 
 ### PUT contact
-PUT http://localhost:8080/contacts/6489bd6a40bacb692b343b67 HTTP/1.1
+PUT http://localhost:8080/contacts/6489bf9698cd366a0d9fd244 HTTP/1.1
 content-type: application/json
 
 {
@@ -55,9 +55,12 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE http://localhost:8080/contacts/6489be0fd8657209f3daff32 HTTP/1.1
+DELETE http://localhost:8080/contacts/6489bf9698cd366a0d9fd244 HTTP/1.1
 
 //RENDER ENVIRONMENT
+
+### Get All Contacts
+GET https://cse-341-lesson-3-ucfm.onrender.com/contacts
 
 ### Create contact
 POST https://cse-341-lesson-3-ucfm.onrender.com/contacts HTTP/1.1
@@ -73,7 +76,7 @@ content-type: application/json
 
 
 ### PUT contact
-PUT https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489bc6b40bacb692b343b66 HTTP/1.1
+PUT https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489c02d7c8bbbb8d13ff549 HTTP/1.1
 content-type: application/json
 
 {
@@ -85,4 +88,4 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489bc6b40bacb692b343b66 HTTP/1.1
+DELETE https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489c02d7c8bbbb8d13ff549 HTTP/1.1
