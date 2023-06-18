@@ -1,17 +1,91 @@
 //LOCAL ENVIRONMENT
-//Get All Contacts
+### Get all Contacts
 GET http://localhost:8080/contacts
 
-//Get Individual Contact
+### Get contact 1
 GET http://localhost:8080/contacts/64845d8828b5e4bfd5d242b3
+
+### Get contact 2
 GET http://localhost:8080/contacts/64845e3728b5e4bfd5d242b5
+
+### Get contact 3
 GET http://localhost:8080/contacts/648460ea28b5e4bfd5d242b8
 
 //RENDER ENVIRONMENT
-//Get All Contacts
+### Get all contacts
 GET https://cse-341-ortega.onrender.com/contacts
 
-//Get Individual Contact
+### Get contact 1
 GET https://cse-341-ortega.onrender.com/contacts/64845d8828b5e4bfd5d242b3
+
+### Get contact 2
 GET https://cse-341-ortega.onrender.com/contacts/64845e3728b5e4bfd5d242b5
+
+### Get contact 3
 GET https://cse-341-ortega.onrender.com/contacts/648460ea28b5e4bfd5d242b8
+
+//LESSON 3
+//LOCAL ENVIRONMENT
+### Get contacts
+GET http://localhost:8080/contacts 
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Arnel",
+    "lastName":"Ortega",
+    "email":"arnel@cse431.com",
+    "favoriteColor":"Blue",
+    "birthday":"08/23/1962"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/6489bf9698cd366a0d9fd244 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Arnel",
+    "lastName":"Ortega",
+    "email":"arnel_ortega@cse341.com",
+    "favoriteColor":"Pink",
+    "birthday":"08/23/1962"
+}
+
+### DELETE contact
+DELETE http://localhost:8080/contacts/6489bf9698cd366a0d9fd244 HTTP/1.1
+
+//RENDER ENVIRONMENT
+
+### Get All Contacts
+GET https://cse-341-lesson-3-ucfm.onrender.com/contacts
+
+### Create contact
+POST https://cse-341-lesson-3-ucfm.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Arnel",
+    "lastName":"Ortega",
+    "email":"arnel@cse431.com",
+    "favoriteColor":"Blue",
+    "birthday":"08/23/1962"
+}
+
+
+### PUT contact
+PUT https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489c02d7c8bbbb8d13ff549 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Arnel",
+    "lastName":"Ortega",
+    "email":"arnel_ortega@cse341.com",
+    "favoriteColor":"Pink",
+    "birthday":"08/23/1962"
+}
+
+### DELETE contact
+DELETE https://cse-341-lesson-3-ucfm.onrender.com/contacts/6489c02d7c8bbbb8d13ff549 HTTP/1.1
